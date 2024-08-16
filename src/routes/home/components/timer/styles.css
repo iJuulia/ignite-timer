@@ -1,0 +1,25 @@
+form {
+  @apply flex flex-col items-center gap-14;
+}
+
+.form-container {
+  @apply flex w-full flex-wrap items-center justify-center gap-2 text-lg font-bold text-gray-100;
+}
+
+input {
+  @apply h-10 border-b-2 border-b-gray-500 bg-transparent text-lg font-bold placeholder-gray-600 focus:border-b-green-500 focus:ring-0;
+}
+
+input[type='text'] {
+  @apply flex-1 px-2 placeholder-gray-500;
+  &::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
+}
+
+input[type='number'] {
+  @apply w-16 text-center placeholder-gray-500 invalid:border-b-red-500;
+  &::-webkit-inner-spin-button {
+    display: none !important;
+  }
+}

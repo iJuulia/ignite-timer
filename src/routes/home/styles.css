@@ -1,0 +1,15 @@
+.home-container {
+  @apply flex flex-1 flex-col items-center justify-center;
+}
+
+.countdown-button {
+  @apply flex w-full items-center justify-center gap-2 rounded-lg p-4 font-bold text-gray-100 enabled:cursor-pointer enabled:hover:bg-green-700;
+}
+
+.start-button {
+  @apply bg-green-500 enabled:hover:bg-green-700 disabled:cursor-not-allowed disabled:opacity-70;
+}
+
+.stop-button {
+  @apply bg-red-500 enabled:hover:bg-red-700;
+}

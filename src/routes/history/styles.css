@@ -1,0 +1,60 @@
+::-webkit-scrollbar {
+  @apply w-[5px];
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-gray-500;
+}
+
+.history-container {
+  @apply flex flex-1 flex-col space-y-8 overflow-hidden p-14;
+}
+
+h1 {
+  @apply text-2xl text-gray-100;
+}
+
+.history-list {
+  @apply max-h-fit flex-1 overflow-auto px-1;
+}
+
+table {
+  @apply w-full min-w-[600px] border-collapse;
+}
+
+th {
+  @apply bg-gray-600 p-4 text-left text-sm leading-relaxed text-gray-100;
+  &:first-child {
+    @apply rounded-tl-lg pl-6;
+  }
+  &:last-child {
+    @apply rounded-tr-lg pr-6;
+  }
+}
+
+td {
+  @apply border-t-4 border-gray-800 bg-gray-700 p-4 text-sm leading-relaxed;
+  &:first-child {
+    @apply w-1/2 pl-6;
+  }
+  &:last-child {
+    @apply pr-6;
+  }
+}
+
+tr {
+  &:last-child {
+    td:first-child {
+      @apply rounded-bl-lg;
+    }
+    td:last-child {
+      @apply rounded-br-lg;
+    }
+  }
+}
+
+.status {
+  @apply flex items-center gap-2 before:size-2 before:rounded-full before:bg-yellow-500 before:content-[''];
+}
